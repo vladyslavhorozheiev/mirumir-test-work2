@@ -1,0 +1,155 @@
+// Extra small devices (portrait phones, less than 576px)
+
+@media only screen and (max-width:575.98px) {
+	.container {
+		max-width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.col-left {
+		width: 60.6094808126%;
+		padding-left: 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.col-right {
+		width: 39.5033860045%;
+		display: flex;
+		align-items: center;
+	}
+
+	//SECTION
+	.holder {
+		padding: 0;
+		padding-top: 20px;
+
+		& .title {
+
+			& h1 {
+				padding-bottom: 15px;
+			}
+
+			& h2 {
+				padding-bottom: 10px;
+			}
+		}
+
+		& .table {
+			display: flex;
+			flex-direction: column;
+
+			& .thead {
+				display: inline-flex;
+				padding: 5px 0;
+				width: 100%;
+				background: #f4f6f9;
+			}
+
+			& .table-row {
+				display: inline-flex;
+				width: 100%;
+				padding: 15px 0;
+				border-bottom: 1px solid #cbd0d8;
+
+				& .row {
+					flex-direction: column;
+
+					& .col-left,
+					& .col-right {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.col-left p {
+		padding-bottom: 10px;
+	}
+
+
+	.col-button,
+	.col-checkbox {
+		justify-content: space-between;
+		padding-left: 0;
+	}
+
+	.col-button {
+		justify-content: center;
+	}
+}
+
+//// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) and (max-width: 919.98px) {
+	.container {
+		max-width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.col-left {
+		width: 60.6094808126%;
+		padding-left: 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.col-right {
+		width: 39.5033860045%;
+		display: flex;
+		align-items: center;
+	}
+
+	//SECTION
+	.holder {
+
+		padding: 0px;
+		padding-top: 60px;
+
+		& .title {
+
+			& h1 {
+				padding-bottom: 20px;
+			}
+
+			& h2 {
+				padding-bottom: 15px;
+			}
+		}
+
+		& .table {
+			display: flex;
+			flex-direction: column;
+
+			& .thead {
+				display: inline-flex;
+				padding: 10px 0;
+				width: 100%;
+				background: #f4f6f9;
+			}
+
+			& .table-row {
+				display: inline-flex;
+				width: 100%;
+				padding: 20px 0;
+				border-bottom: 1px solid #cbd0d8;
+
+				& .row {
+
+					& .col-left,
+					& .col-right {
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+
+	.col-button,
+	.col-checkbox {
+		justify-content: space-between;
+		padding-left: 0;
+	}
+}
